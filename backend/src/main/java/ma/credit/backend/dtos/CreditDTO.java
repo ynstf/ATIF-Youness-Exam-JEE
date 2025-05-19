@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.List;
 
 @Data @NoArgsConstructor @AllArgsConstructor
-public abstract class CreditDTO {
+public class CreditDTO {
     private Long id;
     private Date dateDemande;
     private String statut;

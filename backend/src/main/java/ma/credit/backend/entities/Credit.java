@@ -12,7 +12,7 @@ import java.util.List;
 @Data @NoArgsConstructor @AllArgsConstructor
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "TYPE_CREDIT", discriminatorType = DiscriminatorType.STRING, length = 20)
-public abstract class Credit {
+public class Credit {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Temporal(TemporalType.DATE)
